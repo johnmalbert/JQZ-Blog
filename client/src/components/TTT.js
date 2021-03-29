@@ -22,12 +22,40 @@ export default () => {
         }
         return null;
     }
+    const oppTurn = () => {
+        const lines = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6],
+        ];
+        var turn = 0;
+        for (let i = 0; i < lines.length; i++) {
+            const [a, b, c] = lines[i];
+            if (ttarr[a] !== 1 && ttarr[b] !== 1 && ttarr[c] !== 1) {
+                if(!ttarr[a]){
+                    turn = a;
+                } else if (!ttarr[b]){
+                    turn = b;
+                } else if (!ttarr[c]) {
+                    turn = c;
+                }
+            }
+        }
+        ttarr[turn] = 2;
+        document.getElementById(turn).innerText="X";
+    }
     const onClick = e => {
         if(!ttarr[e.target.id]){
             ttarr[e.target.id] = 1;
             setTtarr(ttarr);
             e.target.innerText="O";
             checkWin()
+            oppTurn()
             console.log(ttarr)
         }
     }
