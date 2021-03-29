@@ -1,7 +1,7 @@
 const Item = require('../models/model');
 module.exports = {
     createItem: (req, res) => {
-        Item.exists({firstName: req.body.firstName})
+        Item.exists({name: req.body.name})
             .then(ItemExists => {
             if(ItemExists){
                 return Promise.reject({ errors: { name:  { message: "A Item with that name already exists."}}});
