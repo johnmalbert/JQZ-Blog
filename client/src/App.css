@@ -1,7 +1,15 @@
 .App {
   text-align: center;
 }
+#tttboard{
+  border-collapse:collapse;
+  border-style: hidden;
 
+}
+.ttt{
+  border: 2px black solid;
+  padding: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
