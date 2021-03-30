@@ -6,9 +6,9 @@ import close from '../close.png'
 const DevJoke = () => {
     const [loaded, setLoaded] = useState(false);
     const [joke, setJoke] = useState({
-        setup: "",
+        setup: "Loading...",
         delivery: "",
-        joke: ""
+        joke: "Loading..."
     });
 
     useEffect(() => {
@@ -41,7 +41,7 @@ const DevJoke = () => {
                     }
                 </div>
                 :
-                ""
+                "Loading a Dev Joke..."
             }
             </div>
         </div>

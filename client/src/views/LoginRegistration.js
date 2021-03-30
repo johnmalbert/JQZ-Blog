@@ -20,7 +20,7 @@ const LoginRegistration = () => {
 
 
     return (
-        <div>
+        <div className ="text-center">
             {
                 slider === 2 ? 
                 <LoginForm /> :
