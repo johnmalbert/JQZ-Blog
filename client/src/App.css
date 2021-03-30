@@ -47,7 +47,6 @@ button.dropdown-toggle.btn.btn-primary {
     justify-content: space-between;
     margin: 20px;
 }
-<<<<<<< HEAD
 .quotes{
   height: 3rem;
 }
@@ -71,12 +70,10 @@ button.dropdown-toggle.btn.btn-primary {
   list-style-type: none;
   text-align: right;
   margin: 1rem;
-=======
-
+}
 .landingJoke {
     display: flex;
     margin-top: -4rem;
     justify-content: center;
     font-size: smaller;
->>>>>>> 7f496faf6ec42209d1281bb689ee366d9e687db6
 }
