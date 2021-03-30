@@ -21,21 +21,6 @@ function App() {
 
     return () => socket.disconnect(true);
   }, []);
-<<<<<<< HEAD
-
-  return (
-    <div className="App">
-      <Router>
-        <Landing path="/" />
-        <Portfolio path="/portfolio" />
-        <CodeSnippets path="/code" /> 
-        <Algorithms path="/algorithms" /> 
-        <LoginRegistration path="/login" />
-        <TTT path = "/ttt" />
-      </Router>
-    </div>
-  );
-=======
   
     return (
         <div className="App">
@@ -57,7 +42,7 @@ function App() {
             </div>
             <Router>
                 <Landing path="/" />
-                <PortfolioView path="/portfolio" />
+                <Portfolio path="/portfolio" />
                 <CodeSnippets path="/code" /> 
                 <Algorithms path="/algorithms" /> 
                 <LoginRegistration path="/login" />
@@ -65,7 +50,6 @@ function App() {
             </Router>
         </div>
     );
->>>>>>> 7f496faf6ec42209d1281bb689ee366d9e687db6
 }
 
 export default App;
