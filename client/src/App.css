@@ -44,3 +44,23 @@
     transform: rotate(360deg);
   }
 }
+.loginbox {
+  background-color: #929292;
+  width: 20%;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  min-height: 25rem;
+}
+
+#slider{
+  width: 3rem;
+  display: inline-block;
+  height: 3rem;
+  vertical-align: middle;
+  margin: 5px;
+}
+.quotes{
+  height: 3rem;
+}

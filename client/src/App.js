@@ -5,7 +5,7 @@ import PortfolioView from './views/PortfolioView';
 import CodeSnippets from './views/CodeSnippets';
 import Algorithms from './views/Algorithms';
 import LoginRegistration from './views/LoginRegistration';
-
+import TTT from './components/TTT';
 function App() {
   return (
     <div className="App">
@@ -15,6 +15,7 @@ function App() {
         <CodeSnippets path="/code" /> 
         <Algorithms path="/algorithms" /> 
         <LoginRegistration path="/login" />
+        <TTT path = "/ttt" />
       </Router>
     </div>
   );
