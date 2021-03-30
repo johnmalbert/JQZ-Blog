@@ -15,3 +15,4 @@ const ProjectSchema = new mongoose.Schema({
         type: Image,
     }
 }, {timestamps: true});
+module.exports = ProjectModel;
