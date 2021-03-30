@@ -1,66 +1,53 @@
 .App {
-  text-align: center;
+    margin: 20px auto;
 }
+
 #tttboard{
-  border-collapse:collapse;
-  border-style: hidden;
-
+    border-collapse:collapse;
+    border-style: hidden;
 }
+
 .ttt{
-  border: 2px black solid;
-  padding: 10px;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    border: 2px black solid;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .loginbox {
-  background-color: #929292;
-  width: 20%;
-  margin: auto;
-  padding: 2rem;
-  border: 1px solid gray;
-  border-radius: 10px;
-  min-height: 25rem;
+    background-color: #929292;
+    width: 20%;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    min-height: 25rem;
 }
 
 #slider{
-  width: 3rem;
-  display: inline-block;
-  height: 3rem;
-  vertical-align: middle;
-  margin: 5px;
+    width: 3rem;
+    display: inline-block;
+    height: 3rem;
+    vertical-align: middle;
+    margin: 5px;
 }
+
+.quotes{
+    height: 2rem;
+}
+
+button.dropdown-toggle.btn.btn-primary {
+    display: flex;
+}
+
+.dropdown-toggle::after {
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+<<<<<<< HEAD
 .quotes{
   height: 3rem;
 }
@@ -84,4 +71,12 @@
   list-style-type: none;
   text-align: right;
   margin: 1rem;
+=======
+
+.landingJoke {
+    display: flex;
+    margin-top: -4rem;
+    justify-content: center;
+    font-size: smaller;
+>>>>>>> 7f496faf6ec42209d1281bb689ee366d9e687db6
 }

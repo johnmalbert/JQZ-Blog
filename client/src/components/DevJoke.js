@@ -24,7 +24,6 @@ const DevJoke = () => {
     return (
         <div>
             <div className="container">
-
             {
                 loaded ? 
                 <div>

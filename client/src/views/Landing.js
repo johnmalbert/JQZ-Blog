@@ -1,9 +1,10 @@
-import { Link } from '@reach/router'
 import React from 'react'
+import DevJoke from '../components/DevJoke'
 
 const Landing = () => {
     return (
         <div>
+<<<<<<< HEAD
             <h1>Landing Page!</h1>
             <h3>Navigation Links:</h3>
             <div>
@@ -11,15 +12,11 @@ const Landing = () => {
                 <Link to="/portfolio/john">Portfolio | </Link> 
                 <Link to="/code">Code Snippets | </Link>
                 <Link to="/algorithms">Algorithm Challenges | </Link>
+=======
+            <div className="landingJoke">
+                <DevJoke />
+>>>>>>> 7f496faf6ec42209d1281bb689ee366d9e687db6
             </div>
-            <div>
-                Will be in the top right
-                <Link to="/login">Login/Register</Link>
-            </div>
-            <div style={{height: '400px', width: '75%', margin: 'auto', border: '1px solid black'}}>
-                <h1>Current trending development</h1>
-            </div>
-            <div>Links to the games here...</div>
         </div>
     )
 }

@@ -1,7 +1,8 @@
 import React from 'react'
-import guy from '../guy.jpg';
+// import guy from '../guy.jpg';
 
-const PortfolioBody = () => {
+const PortfolioBody = props => {
+    const { guy } = props;
     return (
         <div>
                 <div className="row">

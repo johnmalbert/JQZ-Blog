@@ -5,7 +5,7 @@ import PortfolioBanner from './PortfolioBanner';
 import PortfolioBody from './PortfolioBody';
 
 const PortfolioDisplay = props => {
-    const { owner } = props;
+    const { guy } = props;
     return (
         <div>
             <h1> HI, MY NAME IS JOHN </h1>
@@ -15,7 +15,7 @@ const PortfolioDisplay = props => {
                     <LinksToDocs />
                 </div>
                 <div className="col-md-8">
-                    <PortfolioBody />
+                    <PortfolioBody guy={guy}/>
                 </div>
                 <div className="col-md-2">
                     <PortfolioAwards />
