@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import io from 'socket.io-client';
 import { Router } from '@reach/router';
 import Landing from './views/Landing';
-import PortfolioView from './views/PortfolioView';
+import Portfolio from './views/Portfolio';
 import CodeSnippets from './views/CodeSnippets';
 import Algorithms from './views/Algorithms';
 import LoginRegistration from './views/LoginRegistration';
@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <Router>
         <Landing path="/" />
-        <PortfolioView path="/portfolio" />
+        <Portfolio path="/portfolio" />
         <CodeSnippets path="/code" /> 
         <Algorithms path="/algorithms" /> 
         <LoginRegistration path="/login" />

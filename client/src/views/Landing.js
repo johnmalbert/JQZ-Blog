@@ -8,7 +8,7 @@ const Landing = () => {
             <h3>Navigation Links:</h3>
             <div>
                 Will be a dropdown
-                <Link to="/portfolio">Portfolio | </Link> 
+                <Link to="/portfolio/john">Portfolio | </Link> 
                 <Link to="/code">Code Snippets | </Link>
                 <Link to="/algorithms">Algorithm Challenges | </Link>
             </div>

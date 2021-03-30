@@ -64,3 +64,24 @@
 .quotes{
   height: 3rem;
 }
+
+.portfolio-banner{
+  display: inline;
+  margin: 1rem;
+  list-style-type: none;
+}
+
+.profile-picture{
+  max-width: 75%;
+}
+
+.portfolio-nav{
+  list-style-type: none;
+  text-align: left;
+  margin: 1rem;
+}
+.portfolio-award{
+  list-style-type: none;
+  text-align: right;
+  margin: 1rem;
+}
