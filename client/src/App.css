@@ -55,7 +55,6 @@ button.dropdown-toggle.btn.btn-primary {
 
 .portfolio-award{
   list-style-type: none;
-  text-align: right;
   margin: 1rem;
 }
 
@@ -86,4 +85,14 @@ button.dropdown-toggle.btn.btn-primary {
     width: 15%;
     padding: 20px;
     margin: 20px;
+}
+.portfolio-banner{
+  display: inline;
+  margin: 1%;
+}
+.profile-picture{
+  width: 75%;
+  padding: 2rem;
+  border: 5px solid gray;
+  margin: auto;
 }

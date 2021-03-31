@@ -7,7 +7,6 @@ import DevJoke from '../components/DevJoke';
 
 const LoginRegistration = () => {
     const [slider, setSlider] = useState(2);
-    const [joke, setJoke] = useState("Loading...");
 
     const changeSlider = () => {
         if(slider === 1){
