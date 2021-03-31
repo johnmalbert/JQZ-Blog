@@ -12,10 +12,10 @@ const Projects = props => {
     });
     {/* axios to get that portfolio data */}
     useEffect(() => {
-        axios.get('http://localhost:8000/api/projects/6063d7577122aca6a04e20f9')
+        axios.get('http://localhost:8000/api/projects')
             .then(response => {
                 console.log(response.data);
-                setProject(response.data.results);
+                setProject(response.data.results[0]);
             })
             .catch(err => console.log("Can't find that project", err))
     },[])
