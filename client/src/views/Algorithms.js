@@ -14,6 +14,11 @@ const Algorithms = () => {
             })
             .catch(err => console.log("Error retrieving algos", err))
     }, [])
+    const setRandomAlgo = () => {
+        console.log("Button was clicked!");
+        let rand = Math.floor(Math.random() * allAlgos.length)
+        setAlgo(allAlgos[rand]);
+    }
     return (
         <div>
             <div className="container">
@@ -22,17 +27,18 @@ const Algorithms = () => {
                     <div className="col-sm-6 border p-2">
                         <h3 className="text-center">Algorithm of the Day!</h3>
                         {
-                            allAlgos !== undefined ?
+                            algo !== undefined ?
                             <div>
-                                <h5>Problem Title: {allAlgos[2].title}</h5>
+                                <h5>Problem Title: {algo.title}</h5>
                                 <h5>Description:</h5>
-                                <p>{allAlgos[2].description}</p>
+                                <p>{algo.description}</p>
                                 <h5>Sample input: </h5>
                                 <p>{algo.sampleInput}</p>
                                 <h5>Sample output: </h5>                                
                                 <p>{algo.sampleOutput}</p>
+                                <button className="btn btn-primary" onClick={setRandomAlgo}>New Algo</button>
                             </div> : 
-                            "Loading today's algorithm..."
+                            <button className="btn btn-primary" onClick={setRandomAlgo}>Load Algo</button>
                         }
 
                     </div>
