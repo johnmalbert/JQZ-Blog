@@ -35,3 +35,11 @@ module.exports = app => {
     app.delete("/api/items/:id/", itemController.deleteItem);
 
 }
+const AlgoController = require('../controllers/Algo.controller');
+module.exports = app => {
+    app.post("/api/algos", AlgoController.createAlgo);
+    app.get("/api/algos", AlgoController.getAllAlgos);
+    app.get("/api/algos/:id", AlgoController.getOneAlgo);
+    app.put("/api/algos/:id/", AlgoController.updateAlgo);
+    app.delete("/api/algos/:id/", AlgoController.deleteAlgo);
+}
