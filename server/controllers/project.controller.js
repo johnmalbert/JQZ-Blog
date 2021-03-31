@@ -1,7 +1,7 @@
 const Project = require('../models/ProjectModel');
 module.exports = {
     createProject: (req, res) => {
-        Project.exists({name: req.body.name})
+        Project.exists({title: req.body.name})
             .then(ProjectExists => {
             if(ProjectExists){
                 return Promise.reject({ errors: { title:  { message: "A Project with that Title already exists."}}});
@@ -13,8 +13,8 @@ module.exports = {
             .catch(err => res.json({ message: "error", errors: err.errors }));
     },
     getAllProjects: (req, res) => {
-        Projects.find()
-            .then(data => res.status(200).json({message: "success", results: data}))
+        Project.find()
+            .then(data => res.json({message: "success", results: data}))
             .catch(err => res.json({message: "error", errors: err.errors}));
     },
     getOneProject: (req, res) => {
