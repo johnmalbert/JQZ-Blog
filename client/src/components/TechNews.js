@@ -1,53 +1,41 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from '@reach/router'
 import axios from 'axios'
 
 const TechNews = () => {
-    const [loaded, setLoaded] = useState(false);
-    const [article, setArticle] = useState({
-        title: "",
-        description: "",
-        image_url: "",
-        url: ""
-    });
+    const [noData, setNoData] = useState(false);
+    const [article, setArticle] = useState([]);
 
     useEffect(() => {
-        axios.get("https://api.thenewsapi.com/v1/news/all?api_token=qqWeINXml9MHzLJnVjuO7pQQsQ48zMqddlJZZigs&search=forex + (usd | gbp) -cad&language=en&categories=tech")
+        axios.get("https://gnewsapi.net/api/search?q=tech&language=en&country=us&limit=5&api_token=vkiXqMUJiUkRDxuStrFZqSqojCkwyYn7fR9NuAqopMriKxir7eT5toEqJ3Yo")
             .then(response => {
-                console.log(response.data);
-                setArticle(response.data)
-                setLoaded(true);
+                console.log(response);
+                setArticle(response.data.articles)
+                setNoData(true);
             })
             .catch(err => console.log("Error", err))
     },[])
 
     return (
         <div>
-            <div className="container">
             {
-                loaded ?
+                article ?
                 <div>
                     {
-                        <div className="newsArticle">
-                            <img src={article.data.[0].image_url} alt=""></img>
-                            <h4>{article.data.[0].title}</h4>
-                            <p>{article.data.[0].description}</p>
-                            <p><a href={article.data.[0].url}>{article.data.[0].url}</a></p>
-                            <img src={article.data.[1].image_url} alt=""></img>
-                            <h4>{article.data.[1].title}</h4>
-                            <p>{article.data.[1].description}</p>
-                            <p><a href={article.data.[1].url}>{article.data.[1].url}</a></p>
-                            <img src={article.data.[3].image_url} alt=""></img>
-                            <h4>{article.data.[3].title}</h4>
-                            <p>{article.data.[3].description}</p>
-                            <p><a href={article.data.[3].url}>{article.data.[3].url}</a></p>
-                        </div>
+                        article.map((article, i) =>
+                            <div className="newsArticle" key={i}>
+                                <img src={article.image_url} alt=""></img>
+                                <h4>{article.title}</h4>
+                                <p>{article.published_datetime}</p>
+                                <p>{article.description}</p>
+                                <p><a href={article.article_url}>{article.article_url}</a></p>
+                            </div>
+                        )
                     }
                 </div>
-                :
-                ""
+                : <div>
+                    <h2>Sorry, no articles are available</h2>
+                </div>
             }
-            </div>
         </div>
     )
 }
