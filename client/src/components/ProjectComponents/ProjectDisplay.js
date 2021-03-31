@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 
-const PortfolioDisplay = props => {
+const ProjectDisplay = props => {
     const { project } = props;
-    //portfolio components: award1, award2, award3, linkedIn, github, facebook, instagram, bio
     return (
         <div>
             <h4>{project.title}</h4>
@@ -11,4 +10,4 @@ const PortfolioDisplay = props => {
     )
 }
 
-export default PortfolioDisplay
+export default ProjectDisplay
