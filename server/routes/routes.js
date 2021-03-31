@@ -1,6 +1,7 @@
 const itemController = require('../controllers/controller');
 const userController = require('../controllers/user.controller');
 const PortfolioController = require('../controllers/portfolio.controller');
+const ProjectController = require('../controllers/project.controller');
 const { authenticate } = require('../config/jwt.config');
 module.exports = app => {
     //user controller routes
@@ -18,6 +19,13 @@ module.exports = app => {
     app.get("/api/portfolios/:id", PortfolioController.getOnePortfolio);
     app.put("/api/portfolios/:id/", PortfolioController.updatePortfolio);
     app.delete("/api/portfolios/:id/", PortfolioController.deletePortfolio);
+    
+    //project routes
+    app.post("/api/projects", ProjectController.createProject);
+    app.get("/api/projects", ProjectController.getAllProjects );
+    app.get("/api/projects/:id", ProjectController.getOneProject);
+    app.put("/api/projects/:id/", ProjectController.updateProject);
+    app.delete("/api/projects/:id/", ProjectController.deleteProject);
 
     //generic item routes
     app.post("/api/items", itemController.createItem);
