@@ -4,6 +4,7 @@ import io from 'socket.io-client';
 import { Router, Link } from '@reach/router';
 import Landing from './views/Landing';
 import Portfolio from './views/Portfolio';
+import Projects from './views/Projects';
 import CodeSnippets from './views/CodeSnippets';
 import Algorithms from './views/Algorithms';
 import LoginRegistration from './views/LoginRegistration';
@@ -43,6 +44,7 @@ function App() {
             <Router>
                 <Landing path="/" />
                 <Portfolio path="/portfolio" />
+                <Projects path="/projects" />
                 <CodeSnippets path="/code" /> 
                 <Algorithms path="/algorithms" /> 
                 <LoginRegistration path="/login" />

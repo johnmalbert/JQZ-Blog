@@ -12,7 +12,10 @@ const ProjectSchema = new mongoose.Schema({
         type: String,
     },
     thumbnail: {
-        type: Image,
+        type: String,
     }
 }, {timestamps: true});
-module.exports = ProjectModel;
+
+const Project = mongoose.model("Project", ProjectSchema);
+
+module.exports = Project;
