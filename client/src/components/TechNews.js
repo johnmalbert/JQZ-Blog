@@ -32,15 +32,15 @@ const TechNews = () => {
                             <img src={article.data.[0].image_url} alt=""></img>
                             <h4>{article.data.[0].title}</h4>
                             <p>{article.data.[0].description}</p>
-                            <p><Link to={article.data.[0].url}>{article.data.[0].url}</Link></p>
+                            <p><a href={article.data.[0].url}>{article.data.[0].url}</a></p>
                             <img src={article.data.[1].image_url} alt=""></img>
                             <h4>{article.data.[1].title}</h4>
                             <p>{article.data.[1].description}</p>
-                            <p><Link to={article.data.[1].url}>{article.data.[1].url}</Link></p>
+                            <p><a href={article.data.[1].url}>{article.data.[1].url}</a></p>
                             <img src={article.data.[3].image_url} alt=""></img>
                             <h4>{article.data.[3].title}</h4>
                             <p>{article.data.[3].description}</p>
-                            <p><Link to={article.data.[3].url}>{article.data.[3].url}</Link></p>
+                            <p><a href={article.data.[3].url}>{article.data.[3].url}</a></p>
                         </div>
                     }
                 </div>
