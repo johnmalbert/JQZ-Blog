@@ -31,7 +31,7 @@
 }
 
 .quotes{
-    height: 2rem;
+    height: 1rem;
 }
 
 button.dropdown-toggle.btn.btn-primary {
@@ -47,33 +47,43 @@ button.dropdown-toggle.btn.btn-primary {
     justify-content: space-between;
     margin: 20px;
 }
-.quotes{
-  height: 3rem;
+
+.landingContent {
+    display: flex;
+    margin-top: 30px;
 }
 
-.portfolio-banner{
-  display: inline;
-  margin: 1rem;
-  list-style-type: none;
-}
-
-.profile-picture{
-  max-width: 75%;
-}
-
-.portfolio-nav{
-  list-style-type: none;
-  text-align: left;
-  margin: 1rem;
-}
 .portfolio-award{
   list-style-type: none;
   text-align: right;
   margin: 1rem;
 }
+
 .landingJoke {
     display: flex;
     margin-top: -4rem;
     justify-content: center;
     font-size: smaller;
+}
+
+.landingTrends {
+    border: 1px solid black;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.newsArticle {
+    justify-content: left;
+}
+
+.newsArticle img {
+    width: 100px;
+}
+
+.landingGames {
+    border: 1px solid black;
+    width: 15%;
+    padding: 20px;
+    margin: 20px;
 }
