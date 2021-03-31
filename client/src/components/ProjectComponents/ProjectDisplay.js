@@ -6,6 +6,7 @@ const ProjectDisplay = props => {
         <div>
             <h4>{project.title}</h4>
             <p>{project.desc}</p>
+            <image className="profile-picture" src={project.thumbnail} alt=""/>
         </div>
     )
 }

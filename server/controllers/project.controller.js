@@ -1,7 +1,8 @@
 const Project = require('../models/ProjectModel');
 module.exports = {
     createProject: (req, res) => {
-        Project.exists({title: req.body.name})
+        console.log(req.body)
+        Project.exists({title: req.body.title})
             .then(ProjectExists => {
             if(ProjectExists){
                 return Promise.reject({ errors: { title:  { message: "A Project with that Title already exists."}}});

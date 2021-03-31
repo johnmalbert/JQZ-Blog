@@ -11,9 +11,7 @@ const ProjectSchema = new mongoose.Schema({
     desc: {
         type: String,
     },
-    thumbnail: {
-        type: String,
-    }
+    thumbnail: {}
 }, {timestamps: true});
 
 const Project = mongoose.model("Project", ProjectSchema);
