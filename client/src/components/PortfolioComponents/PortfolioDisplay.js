@@ -9,7 +9,7 @@ const PortfolioDisplay = props => {
     //portfolio components: award1, award2, award3, linkedIn, github, facebook, instagram, bio
     return (
         <div>
-            <h1 className="text-center"> HI, MY NAME IS JOHN </h1>
+            <h1 className="text-center"> Hi, My Name is {portfolio.name}</h1>
             <PortfolioBanner /> 
             <div className="row p-5">
                 <div className="col-md-2">

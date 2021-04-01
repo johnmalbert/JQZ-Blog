@@ -6,6 +6,7 @@ import axios from 'axios';
 
 
 const Portfolio = props => {
+    const { id } = props;
     const [portfolio, setPortfolio] = useState({
         linkedIn: "",
         github: "",
@@ -19,7 +20,9 @@ const Portfolio = props => {
     });
     {/* axios to get that portfolio data */}
     useEffect(() => {
-        axios.get('http://localhost:8000/api/portfolios/6063d7577122aca6a04e20f9')
+        console.log(id);
+        
+        axios.get('http://localhost:8000/api/portfolios/'+id)
             .then(response => {
                 console.log(response.data);
                 setPortfolio(response.data.results);

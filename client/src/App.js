@@ -10,6 +10,7 @@ import Algorithms from './views/Algorithms';
 import LoginRegistration from './views/LoginRegistration';
 import TTT from './components/TTT';
 import Dropdown from 'react-bootstrap/Dropdown'
+import PortfolioForm from './components/PortfolioComponents/PortfolioForm';
 
 function App() {
 
@@ -48,6 +49,8 @@ function App() {
                 <CodeSnippets path="/code" /> 
                 <Algorithms path="/algorithms" /> 
                 <LoginRegistration path="/login" />
+                <PortfolioForm path="/portfolio/new" />
+                <Portfolio path="/portfolio/:id" />
                 <TTT path = "/ttt" />
             </Router>
         </div>

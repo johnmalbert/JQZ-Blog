@@ -96,3 +96,7 @@ button.dropdown-toggle.btn.btn-primary {
   border: 5px solid gray;
   margin: auto;
 }
+
+textarea {
+    height: 500px;
+}

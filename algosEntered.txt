@@ -93,3 +93,51 @@ id: 6064ca35d9b7f3c440c8fcd6
     "sampleInput": "var str = 'ABC'",
     "sampleOutput": "['ABC', 'AB', 'A', 'BC', 'B', 'C', '']"
 }
+
+{
+    "title": "Bubble Sort",
+    "description": "For every pair of adjacent indicies, swap them if the item on the left is larger than the item on the right until array is fully sorted.",
+    "sampleInput": "var arr = [5,2,3,4,1]",
+    "sampleOutput": "[1,2,3,4,5]",
+    "sampleInput2": "var arr2 = [9,10,1,-2,5]",
+    "sampleOutput2": "[-2,1,5,9,10]"
+}
+
+{
+    "title": "Selection Sort",
+    "description": "Selection sort works by iterating through the list, finding the minimum value, and moving it to the beginning of the list. Then, ignoring the first position, which is now sorted, iterate through the list again to find the next minimum value and move it to index 1. This continues until all values are sorted.",
+    "sampleInput": "var arr = [5,2,3,4,1]",
+    "sampleOutput": "[1,2,3,4,5]",
+    "sampleInput2": "var arr2 = [9,10,1,-2,5]",
+    "sampleOutput2": "[-2,1,5,9,10]"
+}
+
+{
+    "title": "Insertion Sort",
+    "description": "Insertion sort splits the array into two portions, the left portion becomes sorted and the right portion is unsorted.",
+    "sampleInput": "var arr = [5,2,3,4,1]",
+    "sampleOutput": "[1,2,3,4,5]",
+    "sampleInput2": "var arr2 = [9,10,1,-2,5]",
+    "sampleOutput2": "[-2,1,5,9,10]"
+}
+
+{
+    "title": "Ordered Intersection",
+    "description": "Efficiently combine two already sorted multiset arrays into an array containing the sorted set intersection of the two Output: only the shared values between the two arrays (deduped).",
+    "sampleInput": "var arr = [1,4,5,7,7,8,9,9,10,12], var arr2 = [2,3,3,6,7,9,9,9,11,13]",
+    "sampleOutput": "[7,9]"
+}
+
+{
+    "title": "Diagonal Difference",
+    "description": "    Given a square matrix (2d array) of integers Calculate the absolute difference between the sums of its diagonals - top left to bottom right diagonal - top right to bottom left diagonal",
+    "sampleInput": "let nums = [ [ 1, 2, 3 ], [ 5, 3, 2 ], [ 9, 7, 1 ] ]",
+    "sampleOutput": "10"
+}
+
+{
+    "title": "Ordered Mutliset Union",
+    "description": "Union Sorted Arrays - Efficiently combine two already-sorted multiset arraysinto a new sorted array containing the multiset union. Unions by default will take the set of dupes that has the highest occurrences from one array.",
+    "sampleInput": "let nums1 = [1, 3, 3, 4, 5, 5, 5 ]; let nums2 = [2, 3, 5, 6, 6, 7, 9 ];",
+    "sampleOutput": "[1, 2, 3, 3, 4, 5, 5, 5, 6, 6, 7, 9]"
+}

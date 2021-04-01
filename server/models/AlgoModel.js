@@ -17,6 +17,14 @@ const AlgoSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
+    sampleInput2: {
+        type: String,
+        default: ""
+    },
+    sampleOutput2: {
+        type: String,
+        default: ""
+    },
 }, {timestamps: true, strict: false});
 
 const Algo = mongoose.model("Algo", AlgoSchema);
