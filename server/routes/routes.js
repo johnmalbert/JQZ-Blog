@@ -1,3 +1,4 @@
+const AlgoController = require('../controllers/Algo.controller');
 const itemController = require('../controllers/controller');
 const userController = require('../controllers/user.controller');
 const PortfolioController = require('../controllers/portfolio.controller');
@@ -34,9 +35,7 @@ module.exports = app => {
     app.put("/api/items/:id/", itemController.updateItem);
     app.delete("/api/items/:id/", itemController.deleteItem);
 
-}
-const AlgoController = require('../controllers/Algo.controller');
-module.exports = app => {
+    //algo routes
     app.post("/api/algos", AlgoController.createAlgo);
     app.get("/api/algos", AlgoController.getAllAlgos);
     app.get("/api/algos/:id", AlgoController.getOneAlgo);

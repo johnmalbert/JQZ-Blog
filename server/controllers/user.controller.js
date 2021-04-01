@@ -1,6 +1,8 @@
 const User = require('../models/UserModel');
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
+require('dotenv').config();
+
 module.exports = {
     register: (req, res) => {
         User.exists({username: req.body.username})
@@ -14,10 +16,10 @@ module.exports = {
             .then(user => {
                 const userToken = jwt.sign({
                     id: user._id
-                }, process.env.first_key);
+                }, process.env.SECRET_KEY);
 
                 res
-                    .cookie("usertoken", userToken, secret, {
+                    .cookie("usertoken", userToken, process.env.SECRET_KEY, {
                         httpOnly: true
                     })
                     .json({ msg: "success!", user: user });
@@ -44,11 +46,11 @@ module.exports = {
         // if we made it this far, the password was correct
         const userToken = jwt.sign({
             id: user._id
-        }, "JQZEventReminders");
+        },  process.env.SECRET_KEY);
 
         // note that the response object allows chained calls to cookie and json
         res
-            .cookie("usertoken", userToken, "JQZEventReminders", {
+            .cookie("usertoken", userToken,  process.env.SECRET_KEY, {
                 httpOnly: true
             })
             .json({ msg: "success!" });

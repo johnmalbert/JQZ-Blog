@@ -65,3 +65,31 @@ id: 6064ca35d9b7f3c440c8fcd6
     "sampleInput": "var obj = {'A': 'ONE', 'B': 'TWO', 'C': 'THREE'}",
     "sampleOutput": "{'ONE': 'A', 'TWO': 'B', 'THREE': '3' }"
 }
+
+{
+    "title": "Two Num Sum",
+    "description": "Given two Arrays, return an array filled with the sum of each combination of numbers from the arrays. Assume the arrays are the same length",
+    "sampleInput": "var arr1 = [1,2,3] , var arr2 = [4,5,6]",
+    "sampleOutput": "[5,6,7,6,7,8,7,8,9]"
+}
+
+{
+    "title": "Binary Search",
+    "description": "Given a sorted array and a value, return whether that array contains the value. Do not sequentially iterate the array. Instead, divide and conquer, taking advantage of the fact that the array is sorted.",
+    "sampleInput": "var arr1 = [-1,0,1,2,3,4,5,6,7,8,9,10,12,14,15,16,100,110], var target = 110",
+    "sampleOutput": "true"
+}
+
+{
+    "title": "Rising Square",
+    "description": "Given a number, return an array filled with the squares of integers up to the given number",
+    "sampleInput": "var num = 6",
+    "sampleOutput": "[ 1, 4, 9, 16, 25, 36 ]"
+}
+
+{
+    "title": "String Subset",
+    "description": "Given a string, return an array filled with an IN-ORDER substrings",
+    "sampleInput": "var str = 'ABC'",
+    "sampleOutput": "['ABC', 'AB', 'A', 'BC', 'B', 'C', '']"
+}
