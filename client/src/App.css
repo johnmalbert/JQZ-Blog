@@ -97,6 +97,21 @@ button.dropdown-toggle.btn.btn-primary {
   margin: auto;
 }
 
-textarea {
-    height: 500px;
+.portfolioLink{
+    justify-content: left;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 1rem;
+    width: 15rem;
+    height: 15rem;
+    padding-top: 25px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    box-shadow: 2px 4px gray;
+}
+
+.portfolioLink img{
+    width: 150px;
+    border-radius: 25px;
 }
