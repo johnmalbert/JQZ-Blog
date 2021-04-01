@@ -15,7 +15,7 @@ const PortfolioBody = props => {
             console.log(projects)
         })
         .catch(err => console.log("Can't find that project", err))
-},[])
+},[props])
     return (
         <div>
                 <div className="row">
