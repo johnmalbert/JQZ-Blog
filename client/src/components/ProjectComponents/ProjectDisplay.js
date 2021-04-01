@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 
 const ProjectDisplay = props => {
-    const { project } = props;
+    const { project, index } = props;
     return (
         <div>
-            <h4>{project.title}</h4>
-            <p>{project.desc}</p>
+            <h4><a href={project[index].github}>{project[index].title}</a></h4>
+            <p>{project[index].desc}</p>
         </div>
     )
 }

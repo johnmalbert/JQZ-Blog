@@ -6,13 +6,16 @@ const ProjectSchema = new mongoose.Schema({
         required: [true, "Projects need a Title"],
     },
     languages: {
-        type: String
+        type: String,
+        default: ""
     },
     desc: {
         type: String,
+        default: ""
     },
-    thumbnail: {
+    github: {
         type: String,
+        default: ""
     }
 }, {timestamps: true});
 

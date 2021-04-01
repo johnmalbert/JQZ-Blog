@@ -4,29 +4,33 @@ import axios from 'axios';
 
 
 const Projects = props => {
-    const [project, setProject] = useState({
-        title: "",
-        description: "",
-        languages: "",
-        thumbnail: ""
-    });
-    {/* axios to get that portfolio data */}
+    const [project, setProject] = useState([]);
     useEffect(() => {
         axios.get('http://localhost:8000/api/projects')
             .then(response => {
-                console.log(response.data);
-                setProject(response.data.results[0]);
+                setProject(response.data.results);
             })
             .catch(err => console.log("Can't find that project", err))
     },[])
 
 
     return (
-        <div>
-            <ProjectDisplay project={project}/>
 
+        <div>
+    <div className="container">
+        <h3 className="text-center">Projects</h3>
+        <div className="row">
+            <div className="col-sm-12 border p-2">
+            {project.map((task, i) => (
+                <ProjectDisplay project={project} index={i}/>
+                ))}
+            </div>
         </div>
-    )
+    </div>
+</div>
+                )
+
+
 }
 
 export default Projects
