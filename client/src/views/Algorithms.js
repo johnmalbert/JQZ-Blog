@@ -43,14 +43,12 @@ const Algorithms = () => {
 
                     </div>
                     <div className="col-sm-6 border p-2">
-                        <h3 className="text-center">Craft a Node.JS Solution</h3>
-                        <textarea name="code" id="" cols="60" rows="10"></textarea><br/>
-                        <button className="btn btn-primary">Run Code</button>
-                        <button className="btn btn-success float-right">Post your solution!</button>
+                        <iframe height="500px" width="100%" src="https://replit.com/@JohnAlbert2/JQZ?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
                     </div>
                 </div>
             </div>
         </div>
+
     )
 }
 
