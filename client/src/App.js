@@ -11,11 +11,8 @@ import LoginRegistration from './views/LoginRegistration';
 import TTT from './components/TTT';
 import Dropdown from 'react-bootstrap/Dropdown'
 import PortfolioForm from './components/PortfolioComponents/PortfolioForm';
-<<<<<<< HEAD
 import JQZDPG from './JQZDPG.gif';
-=======
 import SinglePortfolio from './views/SinglePortfolio';
->>>>>>> b1cb6af (portfilio and single portfolio pages modified)
 
 function App() {
 
