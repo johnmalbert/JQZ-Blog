@@ -16,6 +16,12 @@ const ProjectSchema = new mongoose.Schema({
     github: {
         type: String,
         default: ""
+    },
+    owner: {
+        type: String,
+    },
+    ownerId: {
+        type: String,
     }
 }, {timestamps: true});
 

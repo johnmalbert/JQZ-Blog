@@ -1,10 +1,11 @@
 import { navigate } from '@reach/router';
 import axios from 'axios';
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 const NewProject = props => {
     const { id } = props; //id should be the user who is creating the project
     const [project, setProject] = useState({})
+    const [portfolio, setPortfolio] = useState({})
     const [errors, setErrors] = useState([]);
     const changeHandler = e => {
         setProject({
@@ -12,8 +13,23 @@ const NewProject = props => {
             [e.target.name]: e.target.value
         });
     }
+    useEffect(() => {
+        axios.get("http://localhost:8000/api/portfolios/" + id)
+            .then(response=> {
+                console.log(response);
+                setPortfolio(response.data.results)
+            }
+            )
+            .catch(err => console.log("error retrieving portfolio ", err))
+    },[])
     const onSubmit = e => {
         e.preventDefault();
+        setProject({
+            ...project,
+            owner: portfolio.name,
+            ownerId: portfolio._id
+        })
+        console.log(project);
         axios.post("http://localhost:8000/api/projects", project)
             .then(response => {
                 console.log(response.data);
@@ -33,6 +49,10 @@ const NewProject = props => {
     return (
         <div>
             <div className="container p-5 text-center">
+                    {
+                    portfolio ?
+                    <h1>Add a project to {portfolio.name}'s Portfolio</h1> : ""
+                }
                 <h3 className="text-center text-secondary border-bottom mb-3 p-3">Upload a project to your portfolio</h3>
                 <form onSubmit={onSubmit}>
                     <div className="form-group">

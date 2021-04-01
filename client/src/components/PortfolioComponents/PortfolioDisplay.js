@@ -21,7 +21,7 @@ const PortfolioDisplay = props => {
                     />
                 </div>
                 <div className="col-md-8">
-                    <PortfolioBody guy={guy} bio={portfolio.bio} id={portfolio._id}/>
+                    <PortfolioBody guy={guy} bio={portfolio.bio} id={portfolio._id} portfolio={portfolio}/>
                 </div>
                 <div className="col-md-2">
                     <PortfolioAwards award1={portfolio.award1} award2={portfolio.award2} award3={portfolio.award3}/>

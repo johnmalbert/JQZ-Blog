@@ -24,6 +24,7 @@ module.exports = app => {
     //project routes
     app.post("/api/projects", ProjectController.createProject);
     app.get("/api/projects", ProjectController.getAllProjects );
+    app.get("/api/projectsOwned/:id", ProjectController.getTHESEProjects );
     app.get("/api/projects/:id", ProjectController.getOneProject);
     app.put("/api/projects/:id/", ProjectController.updateProject);
     app.delete("/api/projects/:id/", ProjectController.deleteProject);
