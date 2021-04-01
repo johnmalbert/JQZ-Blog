@@ -93,7 +93,6 @@ button.dropdown-toggle.btn.btn-primary {
     height: 3rem;
     vertical-align: middle;
     margin: 5px;
-<<<<<<< HEAD
 }
 
 /* --------------------------------------------------------------------------------- */
@@ -140,36 +139,6 @@ button.dropdown-toggle.btn.btn-primary {
     width: 150px;
     border-radius: 25px;
 }
-=======
-}
-
-/* --------------------------------------------------------------------------------- */
-/* Tic Tac Toe elements */
-
-#tttboard {
-    border-collapse:collapse;
-    border-style: hidden;
-}
-
-.ttt {
-    border: 2px black solid;
-    padding: 10px;
-}
-
-/* --------------------------------------------------------------------------------- */
-/* Portfolio Page elements */
-
-.portfolio-award {
-    list-style-type: none;
-    margin: 1rem;
-}
-
-.portfolio-banner {
-    display: inline;
-    margin: 1%;
-}
-
->>>>>>> 0e28ba89c53da1f636879932841830bb78151792
 .profile-picture {
     width: 75%;
     padding: 2rem;
