@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import ProjectDisplay from '../components/ProjectComponents/ProjectDisplay'
+import ProjectProject from '../components/ProjectComponents/ProjectProject'
 import axios from 'axios';
-import { Link } from '@reach/router';
 
 const Projects = props => {
     const [project, setProject] = useState([]);
@@ -23,9 +22,8 @@ const Projects = props => {
             <div className="col-sm-12 border p-2">
             {project.map((task, i) => (
                 <div>
-                    <ProjectDisplay project={project} index={i}/>
+                    <ProjectProject project={project} index={i}/>
                     {console.log(project[i])}
-                    <Link to={`/portfolio/${project[i].ownerId}`}>{project[i].owner}</Link>
                 </div>
                 ))}
             </div>
