@@ -1,38 +1,18 @@
+:root {
+    --primary: #262f34;
+    --secondary: #f34a4a;
+    --tertiary: #f1d3bc;
+    --quaternary: #615049;
+}
+
 .App {
-    margin: 20px auto;
-}
-
-#tttboard{
-    border-collapse:collapse;
-    border-style: hidden;
-}
-
-.ttt{
-    border: 2px black solid;
-    padding: 10px;
-}
-
-.loginbox {
-    background-color: #929292;
-    width: 20%;
     margin: auto;
-    padding: 2rem;
-    border: 1px solid gray;
-    border-radius: 10px;
-    min-height: 25rem;
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
-#slider{
-    width: 3rem;
-    display: inline-block;
-    height: 3rem;
-    vertical-align: middle;
-    margin: 5px;
-}
-
-.quotes{
-    height: 1rem;
-}
+/* --------------------------------------------------------------------------------- */
+/* Header elements */
 
 button.dropdown-toggle.btn.btn-primary {
     display: flex;
@@ -42,20 +22,27 @@ button.dropdown-toggle.btn.btn-primary {
     margin-top: 10px;
 }
 
-.header {
+.mainHeader {
     display: flex;
     justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    
     margin: 20px;
 }
+
+.JQZLogo img {
+    width: 150px;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Landing Page elements */
 
 .landingContent {
     display: flex;
     margin-top: 30px;
-}
-
-.portfolio-award{
-  list-style-type: none;
-  margin: 1rem;
 }
 
 .landingJoke {
@@ -66,7 +53,7 @@ button.dropdown-toggle.btn.btn-primary {
 }
 
 .landingTrends {
-    border: 1px solid black;
+    border: 1px solid var(--quaternary);
     width: 80%;
     margin: 20px;
     padding: 20px;
@@ -81,22 +68,68 @@ button.dropdown-toggle.btn.btn-primary {
 }
 
 .landingGames {
-    border: 1px solid black;
+    border: 1px solid var(--quaternary);
     width: 15%;
     padding: 20px;
     margin: 20px;
 }
-.portfolio-banner{
-  display: inline;
-  margin: 1%;
-}
-.profile-picture{
-  width: 75%;
-  padding: 2rem;
-  border: 5px solid gray;
-  margin: auto;
+
+/* --------------------------------------------------------------------------------- */
+/* Login and Registration elements */
+
+.loginbox {
+    background-color: #929292;
+    width: 20%;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    min-height: 25rem;
 }
 
-textarea {
-    height: 500px;
+#slider {
+    width: 3rem;
+    display: inline-block;
+    height: 3rem;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Tic Tac Toe elements */
+
+#tttboard {
+    border-collapse:collapse;
+    border-style: hidden;
+}
+
+.ttt {
+    border: 2px black solid;
+    padding: 10px;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Portfolio Page elements */
+
+.portfolio-award {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+.portfolio-banner {
+    display: inline;
+    margin: 1%;
+}
+
+.profile-picture {
+    width: 75%;
+    padding: 2rem;
+    border: 5px solid gray;
+    margin: auto;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.quotes {
+    height: 1rem;
 }
