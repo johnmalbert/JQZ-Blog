@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import LinksToDocs from './LinksToDocs';
 import PortfolioAwards from './PortfolioAwards';
 import PortfolioBanner from './PortfolioBanner';
@@ -21,7 +21,7 @@ const PortfolioDisplay = props => {
                     />
                 </div>
                 <div className="col-md-8">
-                    <PortfolioBody guy={guy} bio={portfolio.bio}/>
+                    <PortfolioBody guy={guy} bio={portfolio.bio} id={portfolio._id}/>
                 </div>
                 <div className="col-md-2">
                     <PortfolioAwards award1={portfolio.award1} award2={portfolio.award2} award3={portfolio.award3}/>

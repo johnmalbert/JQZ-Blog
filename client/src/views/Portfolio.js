@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import PortfolioBody from '../components/PortfolioComponents/PortfolioBody';
-import PortfolioDisplay from '../components/PortfolioComponents/PortfolioDisplay'
 import guy from '../guy.jpg';
 import axios from 'axios';
 import { Link } from '@reach/router';

@@ -12,6 +12,7 @@ import TTT from './components/TTT';
 import Dropdown from 'react-bootstrap/Dropdown'
 import PortfolioForm from './components/PortfolioComponents/PortfolioForm';
 import SinglePortfolio from './views/SinglePortfolio';
+import NewProject from './components/ProjectComponents/NewProject';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
                 <LoginRegistration path="/login" />
                 <PortfolioForm path="/portfolio/new" />
                 <SinglePortfolio path="/portfolio/:id" />
+                <NewProject path="/projects/new/:id" />
                 <TTT path = "/ttt" />
             </Router>
         </div>
