@@ -5,11 +5,15 @@
 #tttboard{
     border-collapse:collapse;
     border-style: hidden;
+    table-layout: fixed;
+    width: 20%;
+    height: 200px;
 }
 
 .ttt{
     border: 2px black solid;
-    padding: 10px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .loginbox {

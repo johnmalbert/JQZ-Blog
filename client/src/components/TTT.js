@@ -66,6 +66,7 @@ export default () => {
     }
     return(
         <div>
+            <h4>Tic-Tac-Toe</h4>
         {
             win ? 
             ''
