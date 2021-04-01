@@ -13,36 +13,40 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import PortfolioForm from './components/PortfolioComponents/PortfolioForm';
 import SinglePortfolio from './views/SinglePortfolio';
 import NewProject from './components/ProjectComponents/NewProject';
+import JQZDPG from './JQZDPG.gif';
 
 function App() {
 
-  const [socket] = useState(() => io(':8000'));
+    const [socket] = useState(() => io(':8000'));
 
-  useEffect(() => {
-
-    console.log('Is this running?');
-    socket.on('Welcome', data => console.log(data));
-
-    return () => socket.disconnect(true);
-  }, []);
+    useEffect(() => {
+        console.log('Is this running?');
+        socket.on('Welcome', data => console.log(data));
+        return () => socket.disconnect(true);
+    }, []);
   
     return (
         <div className="App">
-            <div className="header">
-                <Dropdown>
-                    <Dropdown.Toggle>
-                        JQZ Developer Playground
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                        <Dropdown.Item href="/">Home</Dropdown.Item>
-                        <Dropdown.Item href="/portfolio">Portfolio</Dropdown.Item>
-                        <Dropdown.Item href="/projects">Projects</Dropdown.Item>
-                        <Dropdown.Item href="/code">Snippets</Dropdown.Item>
-                        <Dropdown.Item href="/algorithms">Algorithms</Dropdown.Item>
-                        <Dropdown.Item href="/ttt">Fun</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-                <Link to="/login">Login/Register</Link>
+            <div className="mainHeader">
+                <div className="JQZLogo">
+                    <img src={JQZDPG} alt=""/>
+                </div>
+                <div className="header">
+                    <Dropdown>
+                        <Dropdown.Toggle>
+                            JQZ Developer Playground
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="/">Home</Dropdown.Item>
+                            <Dropdown.Item href="/portfolio">Portfolio</Dropdown.Item>
+                            <Dropdown.Item href="/projects">Projects</Dropdown.Item>
+                            <Dropdown.Item href="/code">Snippets</Dropdown.Item>
+                            <Dropdown.Item href="/algorithms">Algorithms</Dropdown.Item>
+                            <Dropdown.Item href="/ttt">Fun</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    <Link to="/login">Login/Register</Link>
+                </div>
             </div>
             <Router>
                 <Landing path="/" />
