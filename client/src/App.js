@@ -11,14 +11,9 @@ import LoginRegistration from './views/LoginRegistration';
 import TTT from './components/TTT';
 import Dropdown from 'react-bootstrap/Dropdown'
 import PortfolioForm from './components/PortfolioComponents/PortfolioForm';
-<<<<<<< HEAD
 import SinglePortfolio from './views/SinglePortfolio';
 import NewProject from './components/ProjectComponents/NewProject';
 import JQZDPG from './JQZDPG.gif';
-=======
-import JQZDPG from './JQZDPG.gif';
-import SinglePortfolio from './views/SinglePortfolio';
->>>>>>> 0e28ba89c53da1f636879932841830bb78151792
 
 function App() {
 
@@ -62,10 +57,7 @@ function App() {
                 <LoginRegistration path="/login" />
                 <PortfolioForm path="/portfolio/new" />
                 <SinglePortfolio path="/portfolio/:id" />
-<<<<<<< HEAD
                 <NewProject path="/projects/new/:id" />
-=======
->>>>>>> 0e28ba89c53da1f636879932841830bb78151792
                 <TTT path = "/ttt" />
             </Router>
         </div>
