@@ -5,10 +5,13 @@
     --quaternary: #615049;
 }
 
+
+
 .App {
     margin: auto;
     background-color: var(--primary);
     color: var(--secondary);
+    height: 100vh;
 }
 
 /* --------------------------------------------------------------------------------- */
