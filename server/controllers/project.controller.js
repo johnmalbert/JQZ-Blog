@@ -17,6 +17,11 @@ module.exports = {
             .then(data => res.json({message: "success", results: data}))
             .catch(err => res.json({message: "error", errors: err.errors}));
     },
+    getTHESEProjects: (req, res) => {
+        Project.where({ownerId: req.params.id })
+            .then(data => res.json({message: "success", results: data}))
+            .catch(err => res.json({message: "error", errors: err.errors}));
+    },
     getOneProject: (req, res) => {
         Project.findById(req.params.id)
             .then(data => res.status(200).json({message: "success", results: data}))
