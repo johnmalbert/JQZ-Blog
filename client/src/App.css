@@ -7,13 +7,15 @@
     border-style: hidden;
     table-layout: fixed;
     width: 20%;
-    height: 200px;
+
 }
 
 .ttt{
     border: 2px black solid;
     overflow: hidden;
     text-align: center;
+    width: 20px;
+    height: 20px;
 }
 
 .loginbox {
