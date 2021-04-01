@@ -5,7 +5,6 @@ const PortfolioBanner = () => {
         <div>
             <div className="col-sm-12 text-center justify-space-between mt-4 pt-2 border">
                 <ul>
-                    <li className="portfolio-banner"><Link to="/#">About Me</Link></li>
                     <li className="portfolio-banner"><Link to="/#">Cover Letter</Link></li>
                     <li className="portfolio-banner"><Link to="/#">Resume</Link></li>
                     <li className="portfolio-banner"><Link to="/#">Projects</Link></li>
