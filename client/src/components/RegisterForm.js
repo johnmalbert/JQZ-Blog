@@ -48,7 +48,7 @@ const RegisterForm = () => {
         <div>
         <div className="loginbox">
             <form onSubmit={submitHandler}>
-            <h2>Register New User</h2>
+            <h2 className="p-4">Register New User</h2>
             <div className="form-group">
                 <input
                 className="form-control"
@@ -86,7 +86,7 @@ const RegisterForm = () => {
                 onChange={(e) => changeHandler(e)}
                 />
             </div>
-            <button type="submit">Register</button>
+            <button  className="btn btn-primary"  type="submit">Register</button>
             {errors
                 ? errors.map((err, index) => (
                     <p style={{ color: "red" }} key={index}>

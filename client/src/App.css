@@ -149,7 +149,7 @@ h2 {
 /* Login and Registration elements */
 
 .loginbox {
-    background-color: #929292;
+    background-color: var(--quaternary);
     width: 20%;
     margin: auto;
     padding: 2rem;
@@ -164,6 +164,10 @@ h2 {
     height: 3rem;
     vertical-align: middle;
     margin: 5px;
+    background:  var(--quaternary);
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------------------------------------- */

@@ -49,7 +49,7 @@ function App() {
                     <img src={JQZDPG} alt=""/>
                 </div>
                 <div className="headerLink">
-                    <Link to="/login">Login/Register</Link>
+                    <button className="btn btn-primary pl-5 text-center pr-5 mr-3"><Link style={{color: "#f1d3bc"}} to="/login">Login/Register</Link></button>                    
                 </div>
             </div>
             <Router>
