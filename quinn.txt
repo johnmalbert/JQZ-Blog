@@ -1,0 +1,6 @@
+{
+    "name": "Quinn",
+    "linkedIn": "https://www.linkedin.com/in/quinn-lathe-81177b177/",
+    "github": "https://github.com/QLathe",
+    "bio": "Graduating from Coding Dojo today. Three months ago I was a writer, but now I'm also a coder. Strange thing is the last thing I'm gonna do at Coding Dojo is write this bio to help show off our presentation. Once you start writing, you can never stop. It worms its way into your brain and starts to take over your soul, like some kind of insanity inducing worm. Coding Dojo gave me a wonderful opportunity to escape from the insanity and run for my life and so I took it. For three months, it worked like a charm and I’m all the better for it. I learned more skills than I believed possible in such a short amount of time. There are times I sit at my computer and straight up feel like a wizard as I take control over random strings of code. I can change the world from my keyboard, and if that isn’t a form of magic… well… then it’s science. But that is aside from the point I’m trying to make. You see, coding and writing aren’t all that different. It’s all writing, just in different languages. So you probably understand my plight when I say I can’t stop writing. It’s not that I want to write, or that I don’t want to stop, it’s just writing is the way things are. The way things have been. The way things will always be."
+}
