@@ -2,6 +2,8 @@ import React from 'react'
 import DevJoke from '../components/DevJoke'
 import TechNews from '../components/TechNews'
 import { Link } from '@reach/router'
+import RandomProject from '../components/ProjectComponents/RandomProject'
+import Portfolio from './Portfolio'
 
 const Landing = () => {
     return (
@@ -13,7 +15,13 @@ const Landing = () => {
                 </div>
                 <div className="landingContent">
                     <h2>Development:</h2>
-
+                    {/* A portfolio, a few project links, an algo */}
+                    <RandomProject />
+                    <RandomProject />
+                    <h3>Portfolio to Highlight</h3>
+                    <Portfolio />
+                    <h3>Project 1</h3>
+                    <h3>Project 2</h3>
                 </div>
                 <div className="landingFun">
                     <div className="landingJoke">

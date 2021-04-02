@@ -88,6 +88,9 @@ h4 {
     color: var(--secondary);
 }
 
+Link{
+    color: var(--secondary);
+}
 .articleDate {
     color: var(--quaternary);
 }
@@ -176,6 +179,19 @@ h2 {
     padding: 10px;
 }
 
+
+.projectLink {
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    min-width: 15rem;
+    min-height: 15rem;
+    padding-top: 25px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    box-shadow: 2px 4px gray;
+}
 /* --------------------------------------------------------------------------------- */
 /* Portfolio Page elements */
 
