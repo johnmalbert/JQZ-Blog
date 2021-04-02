@@ -27,11 +27,8 @@ function App() {
   
     return (
         <div className="App">
-            <div className="mainHeader">
-                <div className="JQZLogo">
-                    <img src={JQZDPG} alt=""/>
-                </div>
-                <div className="header">
+            <div className="header">
+                <div className="headerDropdown">
                     <Dropdown>
                         <Dropdown.Toggle>
                             JQZ Developer Playground
@@ -45,6 +42,11 @@ function App() {
                             <Dropdown.Item href="/ttt">Fun</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
+                </div>
+                <div className="JQZLogo">
+                    <img src={JQZDPG} alt=""/>
+                </div>
+                <div className="headerLink">
                     <Link to="/login">Login/Register</Link>
                 </div>
             </div>

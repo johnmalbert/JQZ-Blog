@@ -3,7 +3,7 @@ import React from 'react'
 const CodeSnippets = () => {
     return (
         <div>
-            <h1>Code Snippets Page!</h1>
+            <h1>CODE SNIPPETS COMING SOON!</h1>
         </div>
     )
 }
