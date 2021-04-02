@@ -12,7 +12,7 @@ const PortfolioDisplay = props => {
             <h1 className="text-center"> Hi, My Name is {portfolio.name}</h1>
             <PortfolioBanner /> 
             <div className="row p-5">
-                <div className="col-md-2">
+                <div className="col-sm-2">
                     <LinksToDocs 
                         linkedIn = {portfolio.linkedIn}
                         instagram = {portfolio.instagram}
@@ -20,7 +20,7 @@ const PortfolioDisplay = props => {
                         github = {portfolio.github}
                     />
                 </div>
-                <div className="col-md-8">
+                <div className="col-sm-8">
                     <PortfolioBody guy={guy} bio={portfolio.bio} id={portfolio._id} portfolio={portfolio}/>
                 </div>
                 <div className="col-md-2">

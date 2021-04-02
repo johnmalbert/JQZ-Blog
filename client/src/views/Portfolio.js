@@ -36,6 +36,7 @@ const Portfolio = props => {
                 </div> 
                     : "Loading the list of portfolios..."
                 }
+                <div className="container text-center"><button className="btn btn-secondary m-5"><Link style={{color: "#f1d3bc"}} to="/portfolio/new" > Add a portfolio!</Link></button></div>
             </div>
         </div>
     )

@@ -10,8 +10,11 @@ const NewProject = props => {
     const changeHandler = e => {
         setProject({
             ...project,
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value,
+            owner: portfolio.name,
+            ownerId: id
         });
+        console.log(project);
     }
     useEffect(() => {
         axios.get("http://localhost:8000/api/portfolios/" + id)
@@ -27,7 +30,7 @@ const NewProject = props => {
         setProject({
             ...project,
             owner: portfolio.name,
-            ownerId: portfolio._id
+            ownerId: id
         })
         console.log(project);
         axios.post("http://localhost:8000/api/projects", project)

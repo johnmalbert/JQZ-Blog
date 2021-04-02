@@ -17,7 +17,7 @@ const Projects = props => {
 
         <div>
     <div className="container">
-        <h3 className="text-center">Projects</h3>
+        <h1 className="text-center text-secondary p-2">Community Projects</h1>
         <div className="row">
             <div className="col-sm-12 border p-2">
             {project.map((task, i) => (

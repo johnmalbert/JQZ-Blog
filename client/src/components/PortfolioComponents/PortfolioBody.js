@@ -19,22 +19,22 @@ const PortfolioBody = props => {
     return (
         <div>
                 <div className="row">
-                    <div className="col-sm-6">
+                    <div className="col-sm-4">
                         <img className="profile-picture" src={guy} alt=""/>
                     </div>
-                    <div className="col-sm-4">
+                    <div className="col-sm-8">
                         <div className="border p-5">
                             {bio}
                         </div>
                         <div className="col text-center">
                             <h3>My Technical Projects:</h3>
                                 {projects ?
-                            <div>
+                                <div className="border p-3">
                                 {projects.map((task, i) => (
                                     <ProjectDisplay project={projects} index={i}/>
                                     ))}
-                            </div>
-                            : ""
+                                </div>
+                                : ""
                             }
                             <button className="btn btn-primary"><Link portfolio={portfolio} style={{color: 'white'}} to={`/projects/new/${id}`}> Add a Project</Link></button>
                         </div>
