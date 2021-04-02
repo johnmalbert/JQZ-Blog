@@ -5,7 +5,7 @@
     --quaternary: #615049;
 }
 
-html{
+html {
     background-color: var(--primary);
 }
 
@@ -18,47 +18,60 @@ html{
 /* --------------------------------------------------------------------------------- */
 /* Header elements */
 
-button.dropdown-toggle.btn.btn-primary {
-    display: flex;
-}
-
-.dropdown-toggle::after {
-    margin-top: 10px;
-}
-
-.mainHeader {
+.header {
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.header {
-    display: flex;
-    
-    margin: 20px;
+.JQZLogo img {
+    width: 10vw;
 }
 
-.JQZLogo img {
-    width: 150px;
+.headerDropdown {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: var(--quaternary);
+    color: var(--tertiary);
+    border-color: var(--quaternary);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    border-color: var(--quaternary);
+}
+
+.show>.btn-primary.dropdown-toggle {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    border-color: var(--quaternary);
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    border-color: var(--quaternary);
+}
+
+.headerLink {
+    margin-top: 10px;
 }
 
 /* --------------------------------------------------------------------------------- */
 /* Landing Page elements */
 
-.landingContent {
+.landingMainContent {
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
-.landingJoke {
-    display: flex;
-    margin-top: -4rem;
-    justify-content: center;
-    font-size: smaller;
-}
 
 .landingTrends {
     border: 1px solid var(--quaternary);
-    width: 80%;
+    width: 20%;
     margin: 20px;
     padding: 20px;
 }
@@ -68,15 +81,66 @@ button.dropdown-toggle.btn.btn-primary {
 }
 
 .newsArticle img {
-    width: 100px;
+    width: 8vw;
 }
 
-.landingGames {
+h4 {
+    color: var(--secondary);
+}
+
+.articleDate {
+    color: var(--quaternary);
+}
+
+.articleDescription {
+    color: var(--tertiary)
+}
+
+.landingContent {
     border: 1px solid var(--quaternary);
-    width: 15%;
+    margin: 20px;
+    padding: 20px;
+    width: 60%;
+}
+
+.landingFun {
+    border: 1px solid var(--quaternary);
+    width: 20%;
     padding: 20px;
     margin: 20px;
 }
+
+.landingJoke {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.landingAlgo {
+    margin-bottom: 20px;
+}
+
+.landingGames {
+    margin-top: 20px;
+}
+
+.landingGames img {
+    width: 10vw;
+}
+
+h2 {
+    color: var(--tertiary);
+    animation: blinker 2.5s alternate-reverse infinite;
+  }
+  
+  @keyframes blinker {
+    2% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+  }
 
 /* --------------------------------------------------------------------------------- */
 /* Login and Registration elements */
@@ -125,7 +189,7 @@ button.dropdown-toggle.btn.btn-primary {
     margin: 1%;
 }
 
-.portfolioLink{
+.portfolioLink {
     justify-content: left;
     display: inline-block;
     text-align: center;
@@ -139,10 +203,11 @@ button.dropdown-toggle.btn.btn-primary {
     box-shadow: 2px 4px gray;
 }
 
-.portfolioLink img{
+.portfolioLink img {
     width: 150px;
     border-radius: 25px;
 }
+
 .profile-picture {
     width: 75%;
     padding: 2rem;

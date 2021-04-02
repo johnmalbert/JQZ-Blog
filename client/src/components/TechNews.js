@@ -7,7 +7,7 @@ const TechNews = () => {
     const [article, setArticle] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://gnewsapi.net/api/search?q=tech&language=en&country=us&limit=5&api_token=${api_key}`)
+        axios.get(`https://gnewsapi.net/api/search?q=tech&language=en&country=us&limit=3&api_token=${api_key}`)
             .then(response => {
                 console.log(response);
                 setArticle(response.data.articles)
@@ -25,10 +25,9 @@ const TechNews = () => {
                         article.map((article, i) =>
                             <div className="newsArticle" key={i}>
                                 <img src={article.image_url} alt=""></img>
-                                <h4>{article.title}</h4>
-                                <p>{article.published_datetime}</p>
-                                <p>{article.description}</p>
-                                <p><a href={article.article_url}>{article.article_url}</a></p>
+                                <a href={article.article_url}><h4>{article.title}</h4></a>
+                                <p className="articleDate">{article.published_datetime}</p>
+                                <p className="articleDescription">{article.description}</p>
                             </div>
                         )
                     }
