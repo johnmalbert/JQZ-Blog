@@ -36,7 +36,7 @@ function App() {
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                             <Dropdown.Item href="/">Home</Dropdown.Item>
-                            <Dropdown.Item href="/portfolio">Portfolio</Dropdown.Item>
+                            <Dropdown.Item href="/portfolios">Portfolio</Dropdown.Item>
                             <Dropdown.Item href="/projects">Projects</Dropdown.Item>
                             <Dropdown.Item href="/code">Snippets</Dropdown.Item>
                             <Dropdown.Item href="/algorithms">Algorithms</Dropdown.Item>
