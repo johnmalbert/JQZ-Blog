@@ -15,7 +15,7 @@ const Portfolio = props => {
             .catch(err => console.log("Can't find that portfolio", err))
     },[])
 
-
+    
     return (
         <div>
             <div className="container">
@@ -26,7 +26,7 @@ const Portfolio = props => {
                     {
                         portfolios.map((portfolio, i) => 
                         <div className="portfolioLink" key={i}>
-                            <Link style={{color: "#f1d3bc"}} to={`/portfolio/${portfolio._id}`}>
+                            <Link style={{color: "#f1d3bc"}} to={`/portfolio/${portfolio._id}`} >
                             <img src={guy} alt="Portfolio"/>
                             <h5 className="p-3">{portfolio.name}</h5>
                             </Link>

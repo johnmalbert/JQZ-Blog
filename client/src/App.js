@@ -36,7 +36,7 @@ function App() {
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                             <Dropdown.Item href="/">Home</Dropdown.Item>
-                            <Dropdown.Item href="/portfolios">Portfolio</Dropdown.Item>
+                            <Dropdown.Item href="/portfolios">Portfolios</Dropdown.Item>
                             <Dropdown.Item href="/projects">Projects</Dropdown.Item>
                             <Dropdown.Item href="/code">Snippets</Dropdown.Item>
                             <Dropdown.Item href="/algorithms">Algorithms</Dropdown.Item>
@@ -54,7 +54,7 @@ function App() {
             </div>
             <Router>
                 <Landing path="/" />
-                <Portfolio path="/portfolio" />
+                <Portfolio path="/portfolios" />
                 <Projects path="/projects" />
                 <CodeSnippets path="/code" /> 
                 <Algorithms path="/algorithms" /> 

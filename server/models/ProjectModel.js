@@ -12,7 +12,7 @@ const ProjectSchema = new mongoose.Schema({
     desc: {
         type: String,
         default: "",
-        maxLength: [150, "Description must be less than 75 characters"]
+        maxLength: [150, "Description must be less than 150 characters"]
     },
     github: {
         type: String,

@@ -7,6 +7,7 @@ import Portfolio from './Portfolio'
 import SumGame from '../SumGame.png'
 
 const Landing = () => {
+
     return (
         <div>
             <div className="landingMainContent">
