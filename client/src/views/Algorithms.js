@@ -9,8 +9,9 @@ const Algorithms = () => {
         axios.get("http://localhost:8000/api/algos")
             .then(response => {
                 console.log(response.data);
-                setAllAlgos(response.data.results)
-                setAlgo(allAlgos[5]);
+                setAllAlgos(response.data.results);
+                let length = response.data.results.length;
+                setAlgo(response.data.results[Math.floor(Math.random()*length)]);
             })
             .catch(err => console.log("Error retrieving algos", err))
     }, [])

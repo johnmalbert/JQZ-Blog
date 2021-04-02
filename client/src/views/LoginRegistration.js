@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import axios from 'axios';
-import {navigate} from '@reach/router';
 import LoginForm from '../components/LoginForm';
 import RegisterForm from '../components/RegisterForm';
 import DevJoke from '../components/DevJoke';
@@ -21,7 +19,7 @@ const LoginRegistration = () => {
     return (
         <div className ="text-center">
             {
-                slider === 2 ? 
+                slider === 1 ? 
                 <LoginForm /> :
                 <RegisterForm />
             }
@@ -30,8 +28,9 @@ const LoginRegistration = () => {
                 <input id="slider" type="range" name="slider" min="1" max="2" value={slider} onChange={changeSlider}/>
                 <span> Register</span>
             </p>
-
-            <DevJoke />
+            <div className="container w-25">
+                <DevJoke />
+            </div>
         </div>
     )
 }

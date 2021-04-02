@@ -3,7 +3,6 @@ import axios from 'axios'
 
 const TechNews = () => {
     const api_key = process.env.REACT_APP_FIRST_KEY;
-    const [noData, setNoData] = useState(false);
     const [article, setArticle] = useState([]);
 
     useEffect(() => {
@@ -11,7 +10,6 @@ const TechNews = () => {
             .then(response => {
                 console.log(response);
                 setArticle(response.data.articles)
-                setNoData(true);
             })
             .catch(err => console.log("Error", err))
     },[])

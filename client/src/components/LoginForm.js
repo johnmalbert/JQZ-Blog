@@ -20,6 +20,7 @@ const LoginForm = () => {
         axios.post("http://localhost:8000/api/users/login", loginUser)
             .then(response => {
                 console.log(response);
+                navigate("/");
             })
             .catch(err => console.log("Error with login", err))
     }

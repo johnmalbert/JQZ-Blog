@@ -5,12 +5,8 @@ import { Link } from '@reach/router';
 
 
 const Portfolio = props => {
-    const { id } = props;
     const [portfolios, setPortfolios] = useState([])
-    {/* axios to get that portfolio data */}
     useEffect(() => {
-        console.log(id);
-        
         axios.get('http://localhost:8000/api/portfolios/')
             .then(response => {
                 console.log(response.data);
@@ -31,7 +27,7 @@ const Portfolio = props => {
                         portfolios.map((portfolio, i) => 
                         <div className="portfolioLink" key={i}>
                             <Link to={`/portfolio/${portfolio._id}`}>
-                            <img src={guy} alt="Portfolio Image"/>
+                            <img src={guy} alt="Portfolio"/>
                             <h4>{portfolio.name}</h4>
                             </Link>
                         </div>

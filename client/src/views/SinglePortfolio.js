@@ -10,14 +10,12 @@ const SinglePortfolio = props => {
         github: "",
         facebook: "",
         instagram: "",
-        linkedIn: "",
         award1: "",
         award2: "",
         award3: "",
         bio: ""
     })
     useEffect(() => {
-        console.log(id);        
         axios.get('http://localhost:8000/api/portfolios/' + id)
             .then(response => {
                 console.log(response.data);
