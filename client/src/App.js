@@ -14,6 +14,7 @@ import PortfolioForm from './components/PortfolioComponents/PortfolioForm';
 import SinglePortfolio from './views/SinglePortfolio';
 import NewProject from './components/ProjectComponents/NewProject';
 import JQZDPG from './JQZDPG.gif';
+import GameContainer from './components/SumGameComponents/Game';
 
 function App() {
 
@@ -39,7 +40,8 @@ function App() {
                             <Dropdown.Item href="/projects">Projects</Dropdown.Item>
                             <Dropdown.Item href="/code">Snippets</Dropdown.Item>
                             <Dropdown.Item href="/algorithms">Algorithms</Dropdown.Item>
-                            <Dropdown.Item href="/ttt">Fun</Dropdown.Item>
+                            <Dropdown.Item href="/ttt">Tic Tac Toe</Dropdown.Item>
+                            <Dropdown.Item href="/sumgame">Sum Game</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
@@ -61,6 +63,7 @@ function App() {
                 <SinglePortfolio path="/portfolio/:id" />
                 <NewProject path="/projects/new/:id" />
                 <TTT path = "/ttt" />
+                <GameContainer path = "/sumgame" />
             </Router>
         </div>
     );
