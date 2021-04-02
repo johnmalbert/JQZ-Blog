@@ -9,6 +9,9 @@ html {
     background-color: var(--primary);
 }
 
+.projectspan{
+    font-size: 15px;
+}
 .App {
     margin: auto;
     background-color: var(--primary);
