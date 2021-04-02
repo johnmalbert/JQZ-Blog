@@ -19,16 +19,16 @@ const Portfolio = props => {
     return (
         <div>
             <div className="container">
-                <h1 className="text-center text-secondary">View Portfolios</h1>
+                <h3 className="text-center text-secondary">View Portfolios</h3>
             {
                 portfolios ?
                 <div>
                     {
                         portfolios.map((portfolio, i) => 
                         <div className="portfolioLink" key={i}>
-                            <Link to={`/portfolio/${portfolio._id}`}>
+                            <Link style={{color: "#f1d3bc"}} to={`/portfolio/${portfolio._id}`}>
                             <img src={guy} alt="Portfolio"/>
-                            <h4>{portfolio.name}</h4>
+                            <h5 className="p-3">{portfolio.name}</h5>
                             </Link>
                         </div>
                         )

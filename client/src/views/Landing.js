@@ -25,13 +25,13 @@ const Landing = () => {
                         <Portfolio />
                     </div>
                 </div>
-                <div className="landingFun">
+                <div className="landingFun text-center">
                     <div className="landingJoke">
                         <DevJoke />
                     </div>
                     <div className="landingAlgo">
                         <h2>Solve an Algorithm:</h2>
-                        <Link to="/algorithms">Algo of the day!</Link>
+                        <button className="btn btn-primary mt-3"><Link style={{color: "#f1d3bc"}}  to="/algorithms">Algo of the day!</Link></button>
                     </div>
                     <div className="landingGames">
                         <h2>Play a Game:</h2>
