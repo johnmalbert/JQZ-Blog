@@ -184,13 +184,31 @@ h2 {
     margin: auto;
     display: inline-block;
     text-align: center;
-    vertical-align: top;
+    vertical-align: center;
+    margin-top: 15px;
     min-width: 15rem;
     min-height: 15rem;
-    padding-top: 25px;
+    padding-top: 50px;
     border: 1px solid gray;
     border-radius: 25px;
     box-shadow: 2px 4px gray;
+}
+
+.projectLink img {
+    width: 75%;
+    margin-top: 20px;
+    display: inline-block;
+}
+.githubIcon {
+    height: 40px;
+    max-width: 40px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.projectLink h3{
+    display: inline-block;
 }
 /* --------------------------------------------------------------------------------- */
 /* Portfolio Page elements */

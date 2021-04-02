@@ -14,12 +14,16 @@ const Landing = () => {
                     <TechNews />
                 </div>
                 <div className="landingContent">
-                    <h2>Development:</h2>
+                    <h2 className="border-bottom mb-5">Development:</h2>
+                    <h3 className="text-center text-secondary">Featured Projects: </h3>
+
                     {/* A portfolio, a few project links, an algo */}
                     <RandomProject />
                     <br/>
                     <RandomProject />
-                    <Portfolio />
+                    <div className="container text-center mt-5">
+                        <Portfolio />
+                    </div>
                 </div>
                 <div className="landingFun">
                     <div className="landingJoke">
