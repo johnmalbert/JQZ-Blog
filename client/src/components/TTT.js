@@ -73,8 +73,8 @@ export default () => {
         }
     }
     return(
-        <div className="container">
-            <h4>Tic-Tac-Toe</h4>
+        <div className="tictactoe-game">
+            <h2 className="tictactoe-title">Tic-Tac-Toe</h2>
         {
             win ? 
                 <p>You win!</p>

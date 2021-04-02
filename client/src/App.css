@@ -9,9 +9,10 @@ html {
     background-color: var(--primary);
 }
 
-.projectspan{
+.projectspan {
     font-size: 15px;
 }
+
 .App {
     margin: auto;
     background-color: var(--primary);
@@ -176,16 +177,30 @@ h2 {
 /* --------------------------------------------------------------------------------- */
 /* Tic Tac Toe elements */
 
+.tictactoe-game {
+    display: grid;
+    justify-content: center;
+}
+
+.tictactoe-title {
+    display: grid;
+    justify-content: center;
+    margin: 40px;
+}
+
 #tttboard {
-    border-collapse:collapse;
+    width: 20vw;
+    height: 20vw;
     border-style: hidden;
 }
 
 .ttt {
-    border: 2px black solid;
-    padding: 10px;
+    border: 4px black solid;
+    padding: 50px;
 }
 
+
+/* --------------------------------------------------------------------------------- */
 
 .projectLink {
     margin: auto;
