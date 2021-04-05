@@ -5,17 +5,18 @@ import { Link } from '@reach/router'
 import RandomProject from '../components/ProjectComponents/RandomProject'
 import Portfolio from './Portfolio'
 import SumGame from '../SumGame.png'
+import { Paper } from '@material-ui/core';
 
 const Landing = () => {
 
     return (
         <div>
             <div className="landingMainContent">
-                <div className="landingTrends">
+                <Paper elevation={5} style={{backgroundColor: "#262f34"}} className="landingTrends">
                     <h2>Tech News:</h2>
                     <TechNews />
-                </div>
-                <div className="landingContent">
+                </Paper>
+                <Paper elevation={5} style={{backgroundColor: "#262f34"}} className="landingContent">
                     <h2 className="border-bottom mb-5">Development:</h2>
                     <h3 className="text-center text-secondary">Featured Projects: </h3>
 
@@ -26,8 +27,8 @@ const Landing = () => {
                     <div className="container text-center mt-5">
                         <Portfolio />
                     </div>
-                </div>
-                <div className="landingFun text-center">
+                </Paper>
+                <Paper elevation={5} style={{backgroundColor: "#262f34"}} className="landingFun text-center">
                     <div className="landingJoke">
                         <DevJoke />
                     </div>
@@ -40,7 +41,7 @@ const Landing = () => {
                         <Link to="/ttt"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/1200px-Tic_tac_toe.svg.png" alt=""/></Link>
                         <Link to="/sumgame"><img src={SumGame} alt="Sum Game"/></Link>
                     </div>
-                </div>
+                </Paper>
             </div>
         </div>
     )

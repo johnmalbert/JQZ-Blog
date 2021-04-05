@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import { Paper } from '@material-ui/core';
 
 export default () => {
     const[win, setWin] = useState(false);
@@ -73,20 +74,8 @@ export default () => {
         }
     }
     return(
-        <div className="tictactoe-game">
+        <Paper elevation={5} style={{backgroundColor: "#262f34", width: "50%", margin: "auto", paddingBottom: "40px"}} className="tictactoe-game">
             <h2 className="tictactoe-title">Tic-Tac-Toe</h2>
-        {
-            win ? 
-                <p>You win!</p>
-            :
-            ''
-        }
-        {
-            lose ?
-            <p>You Lost?</p>
-            :
-            ''
-        }
         <table id="tttboard">
             <tr>
                 <td id="0" onClick={onClick} class="ttt"></td>
@@ -106,16 +95,22 @@ export default () => {
         </table>    
         {
             lose ?
-            <button className="btn btn-primary mt-2" onClick={() => window.location.reload(false)}>Play again?</button>
+            <div className="text-center">
+                <h5>You Lost? Really?</h5>
+                <button className="btn btn-primary mt-2" onClick={() => window.location.reload(false)}>Play again?</button>
+            </div>
             :
             ''
         }
         {
             win ? 
+            <div className="text-center">
+                <h5>You win!</h5>
                 <button className="btn btn-primary mt-2" onClick={() => window.location.reload(false)}>Play again?</button>
+            </div>
             :
             ''
         }
-        </div>
+        </Paper>
     )
 }

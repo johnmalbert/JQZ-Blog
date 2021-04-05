@@ -20,7 +20,7 @@ const PortfolioDisplay = props => {
                         github = {portfolio.github}
                     />
                 </div>
-                <div className="col-sm-8">
+                <div className="col-sm-8 text-center">
                     <PortfolioBody guy={guy} bio={portfolio.bio} id={portfolio._id} portfolio={portfolio}/>
                 </div>
                 <div className="col-md-2">

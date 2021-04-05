@@ -2,7 +2,21 @@ import React, {useEffect, useState} from 'react'
 import guy from '../guy.jpg';
 import axios from 'axios';
 import { Link } from '@reach/router';
-
+import {
+    Paper,
+    Card
+} from '@material-ui/core';
+const styles = {
+    paper: {
+        width: "60rem", padding: "1rem", margin: "auto", backgroundColor: " #262f34"
+    },
+    input: {
+        marginBottom: "1rem"
+    },
+    button: {
+        width: "100%"
+    }
+}
 
 const Portfolio = props => {
     const [portfolios, setPortfolios] = useState([])
@@ -18,7 +32,7 @@ const Portfolio = props => {
     
     return (
         <div>
-            <div className="container">
+        <Paper elevation={3} style={styles.paper}>
                 <h3 className="text-center text-secondary">View Portfolios</h3>
             {
                 portfolios ?
@@ -37,7 +51,7 @@ const Portfolio = props => {
                     : "Loading the list of portfolios..."
                 }
                 <div className="container text-center"><button className="btn btn-secondary m-5"><Link style={{color: "#f1d3bc"}} to="/portfolio/new" > Add a portfolio!</Link></button></div>
-            </div>
+            </Paper>
         </div>
     )
 }

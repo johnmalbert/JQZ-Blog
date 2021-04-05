@@ -82,10 +82,15 @@ html {
 
 .newsArticle {
     justify-content: left;
+    padding: 5px;
+    margin: 5px;
+    background-color: #262f34;
 }
 
 .newsArticle img {
     width: 8vw;
+    margin-left: 25%;
+    border-radius: 5px;
 }
 
 h4 {
@@ -121,6 +126,7 @@ Link{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    color: #f34a4a;
 }
 
 .landingAlgo {
@@ -192,15 +198,20 @@ h2 {
     width: 20vw;
     height: 20vw;
     border-style: hidden;
+    padding: 20px;
 }
 
 .ttt {
     border: 4px black solid;
+    font-size: 2rem;
+    color: #f34a4a;
     padding: 50px;
 }
 
 
+
 /* --------------------------------------------------------------------------------- */
+/* Project Display Elements */
 
 .projectLink {
     margin: auto;
@@ -210,15 +221,15 @@ h2 {
     margin-top: 15px;
     min-width: 15rem;
     min-height: 15rem;
-    padding-top: 50px;
-    border: 1px solid gray;
-    border-radius: 25px;
+    padding-top: 30px;
     box-shadow: 2px 4px gray;
 }
 
+.projectLink h3, h5{
+    color: #f34a4a;
+}
 .projectLink img {
     width: 75%;
-    margin-top: 20px;
     display: inline-block;
 }
 .githubIcon {
@@ -231,6 +242,21 @@ h2 {
 }
 .projectLink h3{
     display: inline-block;
+}
+
+.projectElement a, p{
+    color: #f34a4a;
+}
+
+.projectElement img{
+    width: 110%;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.allProjects{
+    max-height: 75rem;
+    overflow: auto;
 }
 /* --------------------------------------------------------------------------------- */
 /* Portfolio Page elements */
@@ -270,9 +296,13 @@ h2 {
     border: 5px solid gray;
     margin: auto;
 }
-
 /* --------------------------------------------------------------------------------- */
 
 .quotes {
     height: 1rem;
+}
+
+.joke{
+    color: #f34a4a;
+    font-style: italic;
 }

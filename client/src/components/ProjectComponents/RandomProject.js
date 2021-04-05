@@ -1,8 +1,8 @@
 import { Link } from '@reach/router';
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
-import proj from './project.png';
 import git from './Github.png';
+import { Paper } from '@material-ui/core';
 
 const RandomProject = props => {
     const [project, setProject] = useState();
@@ -24,18 +24,22 @@ const RandomProject = props => {
 
             {
                 project ? 
-                <div style={{width: "75%"}} className="projectLink">
+                <Paper elevation={5} style={{width: "75%", backgroundColor: "#262f34"}} className="projectLink">
                         <div className="row">
-                            <div className="col-sm-4"><img src={proj} alt="Spotlight Project"/></div>
-                            <div className="col-sm-8 text-left">
+                            <div className="col-sm-3 ml-3">
+                                <a href={project.github}>
+                                    <img src={git} alt="Spotlight Project"/>
+                                    <h5>Source Code</h5>
+                                </a>
+                            </div>
+                            <Paper elevation={5} style={{backgroundColor: "#262f34"}} className="col-sm-8 text-left">
                                 <h3 className="text-center">{project.title}</h3> 
                                 <h5>{project.desc}</h5>
                                 <h5>Owner: {project.owner}</h5>
-                                <h5>{project.languages}</h5>
-                            </div>
+                                <h5>Language: {project.languages}</h5>
+                            </Paper>
                         </div>
-                            <a href={project.github} style={{color: "#f34a4a", marginTop: "-20px"}}><img className="githubIcon" src={git} alt="github logo"/></a>
-                </div>: "Loading..."
+                </Paper>: "Loading..."
             }
             </div>
         </div>

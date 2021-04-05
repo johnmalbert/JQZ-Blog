@@ -16,14 +16,13 @@ const Projects = props => {
     return (
 
         <div>
-    <div className="container">
+    <div className="container allProjects">
         <h1 className="text-center text-secondary p-2">Community Projects</h1>
         <div className="row">
-            <div className="col-sm-12 border p-2">
+            <div className="col-sm-12 border p-2 bg-secondary">
             {project.map((task, i) => (
                 <div>
                     <ProjectProject project={project} index={i}/>
-                    {console.log(project[i])}
                 </div>
                 ))}
             </div>

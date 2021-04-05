@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import open from '../open.png'
 import close from '../close.png'
+import {Card} from '@material-ui/core';
 
 const DevJoke = () => {
     const [loaded, setLoaded] = useState(false);
@@ -23,7 +24,7 @@ const DevJoke = () => {
     },[])
     return (
         <div>
-            <div className="container">
+            <Card elevation={5} style={{backgroundColor: "#262f34"}}>
             {
                 loaded ? 
                 <div>
@@ -43,7 +44,7 @@ const DevJoke = () => {
                 :
                 "Loading a Dev Joke..."
             }
-            </div>
+            </Card>
         </div>
     )
 }
