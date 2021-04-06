@@ -18,13 +18,12 @@ const PortfolioDisplay = props => {
                         instagram = {portfolio.instagram}
                         facebook = {portfolio.facebook}
                         github = {portfolio.github}
+                        youtube = {portfolio.youtube}
                     />
-                </div>
-                <div className="col-sm-8 text-center">
-                    <PortfolioBody guy={guy} bio={portfolio.bio} id={portfolio._id} portfolio={portfolio}/>
-                </div>
-                <div className="col-md-2">
                     <PortfolioAwards award1={portfolio.award1} award2={portfolio.award2} award3={portfolio.award3}/>
+                </div>
+                <div className="col-sm-10 text-center">
+                    <PortfolioBody guy={guy} bio={portfolio.bio} id={portfolio._id} portfolio={portfolio}/>
                 </div>
             </div>
         </div>

@@ -254,6 +254,9 @@ h2 {
     margin-left: 8px;
 }
 
+.technicalProjects {
+    color: #f1d3bc;
+}
 .allProjects{
     max-height: 75rem;
     overflow: auto;
@@ -263,7 +266,7 @@ h2 {
 
 .portfolio-award {
     list-style-type: none;
-    margin: 1rem;
+    color: #f34a4a;
 }
 
 .portfolio-banner {
@@ -285,6 +288,11 @@ h2 {
     box-shadow: 2px 4px gray;
 }
 
+.portfolioLinks ul, li, a {
+    color: #f34a4a;
+    list-style-type: none;
+}
+
 .portfolioLink img {
     width: 150px;
     border-radius: 25px;
@@ -295,6 +303,12 @@ h2 {
     padding: 2rem;
     border: 5px solid gray;
     margin: auto;
+}
+
+.bio {
+    color: #262f34;
+    font-style: italic;
+    font-size: larger;
 }
 /* --------------------------------------------------------------------------------- */
 

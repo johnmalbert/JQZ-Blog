@@ -1,10 +1,10 @@
-import React from 'react'
-
+import React from 'react';
+import { Paper } from '@material-ui/core';
 const LinksToDocs = props => {
     const { linkedIn, facebook, github, instagram, youtube } = props;
     return (
         <div>
-            <div className="border">
+            <Paper className="portfolioLinks" elevation={3} style={{backgroundColor: "#262f34", padding: "10px", margin: "10px"}}>
             <h5 className="text-center p-3 border-bottom">My Links</h5>
                 <ul>
                     {
@@ -28,7 +28,7 @@ const LinksToDocs = props => {
                         <li className="portfolio-nav"><a href={youtube}>Youtube</a></li> : ""
                     }
                 </ul>
-            </div>
+            </Paper>
         </div>
     )
 }
