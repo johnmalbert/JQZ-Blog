@@ -5,17 +5,19 @@ Collaborative group project built using MERN full-stack
 
 Instructions for use:
 
-API Keys and other requirements: GNews (https://gnews.io/), Replit login (https://replit.com/login?goto=%2Frepls), SECRET_KEY: 
+API Keys and other requirements: GNews (https://gnews.io/), Replit login (https://replit.com/login?goto=%2Frepls), SECRET_KEY.
 
-
+Here's how to get the app up and running: 
 ```
 git clone https://github.com/johnmalbert/JQZ-Developer-Playground
 npm i
 ```
+
 Dependencies: 
 ``` 
 npm install bcrypt, cookie-parser, cors, dotenv, express, jsonwebtoken, mongoose, socket.io, socket.io client, nodemon
 ```
+
 Start server on localhost:3000: 
 ```
 nodemon server.js
