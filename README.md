@@ -14,26 +14,16 @@ npm i
 ```
 Dependencies: 
 ``` 
-npm install bcrypt, cookie-parser, cors, dotenv, express, jsonwebtoken, mongoose, socket.io, socket.io client
+npm install bcrypt, cookie-parser, cors, dotenv, express, jsonwebtoken, mongoose, socket.io, socket.io client, nodemon
+```
+Start server on localhost:3000: 
+```
+nodemon server.js
 ```
 
 After Dependencies in project level have been installed, navigate to the client for the React elements: 
 ``` 
 cd client
-```
-``` 
-npm install axios, bcrypt, bootstrap, dotenv, jsonwebtoken, react, @reach/router 
-```
-
-Start server on localhost:3000: 
-```
+npm install axios, bcrypt, bootstrap, dotenv, jsonwebtoken, react, @reach/router  
 npm start
 ```
-In a new terminal, start the client side: 
-
-start client: 
-```
-cd client 
-npm start
-```
-
