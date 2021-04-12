@@ -11,3 +11,5 @@ Dependencies: Run the following code to get this app up and running:
 git clone https://github.com/johnmalbert/JQZ-Developer-Playground
 npm i
 ```
+start server: ```npm start```
+start client: ```cd client ``` + ```npm start```
